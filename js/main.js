@@ -25,7 +25,7 @@ const mapita = {
     funcionExito: function(posicion) {
         mapita.item.latitud = posicion.coords.latitude;
         mapita.item.longitud = posicion.coords.longitude;
-        console.log(mapita.item.latitud + "-" + mapita.item.longitud)
+        //console.log(mapita.item.latitud + "-" + mapita.item.longitud)
         let miUbicacion = new google.maps.Marker({
             position: { lat: mapita.item.latitud, lng: mapita.item.longitud },
             animation: google.maps.Animation.DROP,
@@ -39,6 +39,7 @@ const mapita = {
     }
 };
 $(document).ready(mapita.inicio);
+
 /*function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 5,
